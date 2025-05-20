@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sobre a Conveniência 24 Horas">
+    <meta name="keywords" content="conveniência, história, tradição, qualidade">
+    <meta name="author" content="Seu Nome">
+    <title>Sobre - Conveniência 24 Horas</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+    <style>
+        :root {
+            --convenience-orange: #FF6B00;
+            --convenience-dark-orange: #E65100;
+            --convenience-black: #212121;
+            --convenience-white: #ffffff;
+            --convenience-gray: #757575;
+        }
+
+        .about-section {
+            padding: 60px 20px;
+            background: var(--convenience-white);
+        }
+
+        .about-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            align-items: center;
+        }
+
+        .about-text {
+            color: var(--convenience-black);
+        }
+
+        .about-text h2 {
+            color: var(--convenience-orange);
+            margin-bottom: 20px;
+            font-size: 2.5em;
+        }
+
+        .about-text p {
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+
+        .about-image {
+            width: 100%;
+            border-radius: 15px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .timeline {
+            padding: 60px 20px;
+            background: #f5f5f5;
+        }
+
+        .timeline-content {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .timeline-item {
+            background: var(--convenience-white);
+            padding: 30px;
+            border-radius: 15px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+            border-left: 4px solid var(--convenience-orange);
+        }
+
+        .timeline-item:hover {
+            transform: translateX(10px);
+            box-shadow: 0 8px 12px rgba(0,0,0,0.2);
+        }
+
+        .timeline-item h3 {
+            color: var(--convenience-orange);
+            margin-bottom: 15px;
+        }
+
+        .timeline-item p {
+            color: var(--convenience-black);
+            line-height: 1.6;
+        }
+
+        @media (max-width: 768px) {
+            .about-content {
+                grid-template-columns: 1fr;
+            }
+
+            .about-image {
+                order: -1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>Conveniência 24 Horas</h1>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="sobre.html" aria-current="page">Sobre</a></li>
+                <li><a href="servicos.html">Produtos</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="about-section">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>Nossa História</h2>
+                    <p>Fundada em 2010, a Conveniência 24 Horas nasceu com o objetivo de oferecer praticidade e qualidade aos nossos clientes. Começamos como uma pequena loja e, ao longo dos anos, nos tornamos referência em conveniência na região.</p>
+                    <p>Nossa missão é proporcionar uma experiência única de compra, com produtos frescos, atendimento de qualidade e um ambiente agradável, disponível 24 horas por dia, 7 dias por semana.</p>
+                    <p>Hoje, contamos com uma equipe dedicada e uma ampla variedade de produtos, desde itens básicos até lanches especiais, sempre mantendo o compromisso com a qualidade e o atendimento ao cliente.</p>
+                </div>
+                <img src="img/conveniencia-interior.jpg" alt="Interior da Conveniência" class="about-image">
+            </div>
+        </section>
+
+        <section class="timeline">
+            <div class="timeline-content">
+                <div class="timeline-item">
+                    <h3>Nossos Valores</h3>
+                    <p>Comprometimento com a qualidade, respeito ao cliente e inovação constante são os pilares que guiam nossas ações diárias. Acreditamos que cada cliente merece o melhor atendimento e produtos de primeira linha.</p>
+                </div>
+
+                <div class="timeline-item">
+                    <h3>Nossos Diferenciais</h3>
+                    <p>Além do atendimento 24 horas, oferecemos produtos frescos diariamente, lanches artesanais, café premium e uma ampla variedade de itens de conveniência. Nosso estacionamento exclusivo e localização estratégica facilitam o acesso dos clientes.</p>
+                </div>
+
+                <div class="timeline-item">
+                    <h3>Nossa Missão</h3>
+                    <p>Ser referência em conveniência, oferecendo produtos de qualidade e atendimento excepcional, tornando a experiência de compra dos nossos clientes cada vez mais prática e agradável.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Conveniência 24 Horas. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html> 

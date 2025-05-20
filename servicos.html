@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Produtos da Conveniência 24 Horas">
+    <meta name="keywords" content="conveniência, produtos, lanches, bebidas">
+    <meta name="author" content="Seu Nome">
+    <title>Produtos - Conveniência 24 Horas</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+    <style>
+        :root {
+            --convenience-orange: #FF6B00;
+            --convenience-dark-orange: #E65100;
+            --convenience-black: #212121;
+            --convenience-white: #ffffff;
+            --convenience-gray: #757575;
+        }
+
+        .products-section {
+            padding: 60px 20px;
+            background: var(--convenience-white);
+        }
+
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .product-card {
+            background: var(--convenience-white);
+            border-radius: 50%;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+            aspect-ratio: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            text-align: center;
+            border: 2px solid var(--convenience-black);
+        }
+
+        .product-card:hover {
+            transform: translateY(-10px) scale(1.05);
+            box-shadow: 0 8px 12px rgba(0,0,0,0.2);
+            border-color: var(--convenience-orange);
+        }
+
+        .product-image {
+            width: 120px;
+            height: 120px;
+            object-fit: cover;
+            border-radius: 50%;
+            margin-bottom: 15px;
+        }
+
+        .product-content h3 {
+            color: var(--convenience-black);
+            margin-bottom: 10px;
+        }
+
+        .product-content p {
+            color: #333;
+            margin-bottom: 15px;
+        }
+
+        .price {
+            color: var(--convenience-orange);
+            font-weight: bold;
+            font-size: 1.2em;
+            margin-bottom: 15px;
+        }
+
+        .buy-button {
+            display: inline-block;
+            background: var(--convenience-orange);
+            color: var(--convenience-white);
+            padding: 10px 20px;
+            border-radius: 25px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .buy-button:hover {
+            background: var(--convenience-dark-orange);
+            transform: translateY(-3px);
+        }
+
+        .info-section {
+            padding: 40px 20px;
+            background: #f5f5f5;
+            text-align: center;
+        }
+
+        .info-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .info-content h2 {
+            color: var(--convenience-orange);
+            margin-bottom: 20px;
+        }
+
+        .info-content p {
+            color: var(--convenience-black);
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        @media (max-width: 768px) {
+            .product-card {
+                border-radius: 25px;
+                aspect-ratio: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>Conveniência 24 Horas</h1>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="servicos.html" aria-current="page">Produtos</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="products-section">
+            <h2>Nossos Produtos</h2>
+            <div class="products-grid">
+                <div class="product-card">
+                    <img src="img/lanche.jpg" alt="Lanche" class="product-image">
+                    <div class="product-content">
+                        <h3>Lanche Especial</h3>
+                        <p>Sanduíche artesanal com ingredientes frescos</p>
+                        <p class="price">R$ 15,90</p>
+                        <a href="#" class="buy-button">Comprar</a>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img src="img/cafe.jpg" alt="Café" class="product-image">
+                    <div class="product-content">
+                        <h3>Café Premium</h3>
+                        <p>Café especial com grãos selecionados</p>
+                        <p class="price">R$ 8,90</p>
+                        <a href="#" class="buy-button">Comprar</a>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img src="img/snack.jpg" alt="Snack" class="product-image">
+                    <div class="product-content">
+                        <h3>Snacks</h3>
+                        <p>Variedade de salgados e doces</p>
+                        <p class="price">A partir de R$ 5,90</p>
+                        <a href="#" class="buy-button">Comprar</a>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img src="img/bebida.jpg" alt="Bebida" class="product-image">
+                    <div class="product-content">
+                        <h3>Bebidas</h3>
+                        <p>Refrigerantes, sucos e água</p>
+                        <p class="price">A partir de R$ 3,90</p>
+                        <a href="#" class="buy-button">Comprar</a>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img src="img/mercearia.jpg" alt="Mercearia" class="product-image">
+                    <div class="product-content">
+                        <h3>Mercearia</h3>
+                        <p>Produtos básicos e essenciais</p>
+                        <p class="price">Consulte</p>
+                        <a href="#" class="buy-button">Comprar</a>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img src="img/limpeza.jpg" alt="Limpeza" class="product-image">
+                    <div class="product-content">
+                        <h3>Limpeza</h3>
+                        <p>Produtos de higiene e limpeza</p>
+                        <p class="price">Consulte</p>
+                        <a href="#" class="buy-button">Comprar</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="info-section">
+            <div class="info-content">
+                <h2>Informações Importantes</h2>
+                <p>Nossa conveniência está aberta 24 horas por dia, 7 dias por semana, incluindo feriados. Aceitamos todas as formas de pagamento: dinheiro, cartões de crédito e débito, PIX e transferências.</p>
+                <p>Para pedidos em grande quantidade ou encomendas especiais, entre em contato conosco pelo telefone ou WhatsApp.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Conveniência 24 Horas. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html> 
