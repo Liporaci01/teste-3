@@ -1,287 +1,104 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Conveniência 24 Horas - Tudo que você precisa">
-    <meta name="keywords" content="conveniência, mercado, 24 horas, lanches">
-    <meta name="author" content="Seu Nome">
-    <title>Conveniência 24 Horas</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
-    <style>
-        :root {
-            --convenience-orange: #FF6B00;
-            --convenience-dark-orange: #E65100;
-            --convenience-black: #212121;
-            --convenience-white: #ffffff;
-            --convenience-gray: #757575;
-        }
-
-        .hero {
-            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('img/conveniencia.jpg');
-            background-size: cover;
-            background-position: center;
-            color: var(--convenience-white);
-            text-align: center;
-            padding: 100px 20px;
-            position: relative;
-        }
-
-        .hero h1 {
-            font-size: 3em;
-            margin-bottom: 20px;
-            animation: fadeInDown 1s ease;
-        }
-
-        .hero p {
-            font-size: 1.2em;
-            max-width: 600px;
-            margin: 0 auto;
-            animation: fadeInUp 1s ease;
-        }
-
-        .cta-button {
-            display: inline-block;
-            background: var(--convenience-orange);
-            color: var(--convenience-white);
-            padding: 15px 30px;
-            border-radius: 25px;
-            text-decoration: none;
-            margin-top: 30px;
-            transition: all 0.3s ease;
-            animation: fadeIn 1s ease 0.5s backwards;
-        }
-
-        .cta-button:hover {
-            background: var(--convenience-dark-orange);
-            transform: translateY(-3px);
-        }
-
-        .features {
-            padding: 60px 20px;
-            background: var(--convenience-white);
-        }
-
-        .features-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 30px;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-
-        .feature-card {
-            background: var(--convenience-white);
-            padding: 30px;
-            border-radius: 50%;
-            text-align: center;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-            transition: all 0.3s ease;
-            border: 2px solid var(--convenience-black);
-            aspect-ratio: 1;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .feature-card:hover {
-            transform: translateY(-10px) scale(1.05);
-            box-shadow: 0 8px 12px rgba(0,0,0,0.2);
-            border-color: var(--convenience-orange);
-        }
-
-        .feature-icon {
-            font-size: 50px;
-            margin-bottom: 20px;
-            color: var(--convenience-orange);
-        }
-
-        .feature-card h3 {
-            color: var(--convenience-black);
-            margin-bottom: 15px;
-        }
-
-        .feature-card p {
-            color: #333;
-            line-height: 1.6;
-        }
-
-        @keyframes fadeInDown {
-            from {
-                opacity: 0;
-                transform: translateY(-30px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        @keyframes fadeInUp {
-            from {
-                opacity: 0;
-                transform: translateY(30px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        @keyframes fadeIn {
-            from {
-                opacity: 0;
-            }
-            to {
-                opacity: 1;
-            }
-        }
-
-        .products-section {
-            padding: 60px 20px;
-            background: #f5f5f5;
-        }
-
-        .products-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 30px;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-
-        .product-card {
-            background: var(--convenience-white);
-            border-radius: 50%;
-            overflow: hidden;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-            transition: all 0.3s ease;
-            aspect-ratio: 1;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            padding: 20px;
-            text-align: center;
-        }
-
-        .product-card:hover {
-            transform: translateY(-10px) scale(1.05);
-            box-shadow: 0 8px 12px rgba(0,0,0,0.2);
-        }
-
-        .product-image {
-            width: 120px;
-            height: 120px;
-            object-fit: cover;
-            border-radius: 50%;
-            margin-bottom: 15px;
-        }
-
-        .product-content h3 {
-            color: var(--convenience-black);
-            margin-bottom: 10px;
-        }
-
-        .product-content p {
-            color: #333;
-            margin-bottom: 15px;
-        }
-
-        .price {
-            color: var(--convenience-orange);
-            font-weight: bold;
-            font-size: 1.2em;
-        }
-
-        @media (max-width: 768px) {
-            .feature-card,
-            .product-card {
-                border-radius: 25px;
-                aspect-ratio: auto;
-            }
-        }
-    </style>
+    <title>Connect X</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
     <header>
         <nav>
-            <h1>Conveniência 24 Horas</h1>
-            <ul>
-                <li><a href="index.html" aria-current="page">Início</a></li>
-                <li><a href="sobre.html">Sobre</a></li>
-                <li><a href="servicos.html">Produtos</a></li>
-                <li><a href="contato.html">Contato</a></li>
+            <div class="logo">Connect X</div>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#servicos">Serviços</a></li>
+                <li><a href="#contato">Contato</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <section class="hero">
-            <h1>Conveniência 24 Horas</h1>
-            <p>Tudo que você precisa, quando você precisa</p>
-            <a href="servicos.html" class="cta-button">Ver Produtos</a>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h1>Bem-vindo ao Connect X</h1>
+                <p>Conectando pessoas e ideias de forma inovadora</p>
+                <button class="cta-button">Saiba Mais</button>
+            </div>
         </section>
 
-        <section class="features">
-            <div class="features-grid">
-                <div class="feature-card">
-                    <div class="feature-icon">⏰</div>
-                    <h3>24 Horas</h3>
-                    <p>Atendimento ininterrupto para sua conveniência.</p>
-                </div>
-
-                <div class="feature-card">
-                    <div class="feature-icon">🛒</div>
-                    <h3>Variedade</h3>
-                    <p>Ampla seleção de produtos para todas as necessidades.</p>
-                </div>
-
-                <div class="feature-card">
-                    <div class="feature-icon">🚗</div>
-                    <h3>Estacionamento</h3>
-                    <p>Área exclusiva para clientes com fácil acesso.</p>
+        <section id="sobre" class="about">
+            <h2>Sobre Nós</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Somos uma empresa dedicada a criar conexões significativas através da tecnologia e inovação.</p>
                 </div>
             </div>
         </section>
 
-        <section class="products-section">
-            <h2>Produtos em Destaque</h2>
-            <div class="products-grid">
-                <div class="product-card">
-                    <img src="img/lanche.jpg" alt="Lanche" class="product-image">
-                    <div class="product-content">
-                        <h3>Lanche Especial</h3>
-                        <p>Sanduíche artesanal com ingredientes frescos</p>
-                        <p class="price">R$ 15,90</p>
-                    </div>
+        <section id="servicos" class="services">
+            <h2>Nossos Serviços</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <i class="fas fa-network-wired"></i>
+                    <h3>Conectividade</h3>
+                    <p>Soluções de rede avançadas</p>
                 </div>
-
-                <div class="product-card">
-                    <img src="img/cafe.jpg" alt="Café" class="product-image">
-                    <div class="product-content">
-                        <h3>Café Premium</h3>
-                        <p>Café especial com grãos selecionados</p>
-                        <p class="price">R$ 8,90</p>
-                    </div>
+                <div class="service-card">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3>Segurança</h3>
+                    <p>Proteção de dados</p>
                 </div>
-
-                <div class="product-card">
-                    <img src="img/snack.jpg" alt="Snack" class="product-image">
-                    <div class="product-content">
-                        <h3>Snacks</h3>
-                        <p>Variedade de salgados e doces</p>
-                        <p class="price">A partir de R$ 5,90</p>
-                    </div>
+                <div class="service-card">
+                    <i class="fas fa-cloud"></i>
+                    <h3>Cloud</h3>
+                    <p>Serviços em nuvem</p>
                 </div>
             </div>
+        </section>
+
+        <section id="contato" class="contact">
+            <h2>Entre em Contato</h2>
+            <form class="contact-form">
+                <input type="text" placeholder="Nome" required>
+                <input type="email" placeholder="Email" required>
+                <textarea placeholder="Mensagem" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2025 Conveniência 24 Horas. Todos os direitos reservados.</p>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Connect X</h3>
+                <p>Conectando o futuro</p>
+            </div>
+            <div class="footer-section">
+                <h3>Contato</h3>
+                <p>Email: contato@connectx.com</p>
+                <p>Tel: (11) 1234-5678</p>
+            </div>
+            <div class="footer-section">
+                <h3>Redes Sociais</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Connect X. Todos os direitos reservados.</p>
+        </div>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
